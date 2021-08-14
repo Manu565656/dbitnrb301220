@@ -1,0 +1,34 @@
+def Database():
+    global conn, cursor
+    conn =mysql.connector.connect(host='local
+                                        data
+                                        user
+                                        pass
+
+        cursor=conn.cursor()
+
+    def Exit():
+        result=tkmessageBox.askquestion('system')
+        if result=='yes':
+           root.destroy()
+             exit()
+
+    def Register():
+        Database():
+        if User.get==""orPASS.get()==""or
+           IbI_result.config(text="please complete")
+                                  
+        else:
+             cursor.execute("SELECT*FROM 'USER'
+             if cursor.fechone() is not None:
+                IbI_result.config(text-"Username
+                 else
+                  cursor.execute("INSERT INTO'user
+                  conn .commit()
+                  USER.set("")
+                   PASS.set("")
+                    NAME.set("")
+                     ADDRESS.set("")
+                     IbI_result.config(text="Successful"
+                      cursor.close()
+                       conn.close()                
